@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools = "http://schemas.android.com/tools"
+        tools:showIn= "navigation_view" >
+        <group android:checkableBehavior= "none" >
+            <item
+                android:id= "@+id/orders"
+                android:icon= "@drawable/ic_order"
+                android:title= "@string/orders" />
+<!--            <item-->
+<!--                android:id= "@+id/order_history"-->
+<!--                android:icon= "@drawable/ic_launcher_background"-->
+<!--                android:title= "@string/order_history" />-->
+<!--            <item-->
+<!--                android:id= "@+id/notification"-->
+<!--                android:icon= "@drawable/ic_launcher_background"-->
+<!--                android:title= "@string/notification" />-->
+            <item
+                android:id= "@+id/qr_code"
+                android:icon= "@drawable/ic_qrcode"
+                android:title= "@string/qr_code" />
+            <item
+                android:id= "@+id/change_password"
+                android:icon= "@drawable/ic_change_password"
+                android:title= "@string/changePassword" />
+
+            <item
+                android:id= "@+id/privacy_policy"
+                android:icon= "@drawable/ic_privacy_policy"
+                android:title= "@string/privacy_policy" />
+
+            <item
+                android:id= "@+id/log_out"
+                android:icon= "@drawable/ic_logout"
+                android:title= "@string/logout" />
+            <item
+                android:id= "@+id/delete_acount"
+                android:icon= "@drawable/ic_delete"
+                android:title= "@string/delete" />
+        </group>
+
+</menu>

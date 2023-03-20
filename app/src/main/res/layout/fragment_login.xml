@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_gradient"
+    tools:context=".fragments.LoginFragment">
+
+    <LinearLayout
+        android:id="@+id/parentView"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_150"
+            android:layout_gravity="center"
+            android:src="@drawable/app_logo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="@dimen/dimen_20"/>
+
+
+        <LinearLayout
+            android:background="@drawable/top_corner_rounded_white"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_30"
+                android:layout_marginRight="@dimen/dimen_30"
+                android:layout_marginTop="@dimen/dimen_40"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/loginFieldsLayout">
+
+                    <EditText
+                        android:id="@+id/mobileNumberET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/dimen_12"
+                        android:paddingBottom="@dimen/dimen_12"
+                        android:hint="@string/enterMobile"
+                        android:paddingLeft="@dimen/dimen_10"
+                        android:paddingRight="@dimen/dimen_10"
+                        android:textColor="@color/black"
+                        android:singleLine="true"
+                        android:maxLength="10"
+                        android:inputType="number"
+                        android:digits="1234567890"
+                        android:textColorHint="@color/grey"
+                        android:fontFamily="@font/calibri_regular"
+                        android:textSize="@dimen/display_text_size"
+                        android:importantForAutofill="noExcludeDescendants"
+                        android:background="@drawable/outer_line_fields_shape"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:passwordToggleEnabled="true"
+                        app:boxBackgroundMode="none"
+                        android:textColorHint="@color/grey"
+                        android:layout_marginTop="@dimen/dimen_30"
+                        app:hintEnabled="false"
+
+
+                        >
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/passwordET"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/dimen_12"
+                            android:paddingBottom="@dimen/dimen_12"
+                            android:hint="@string/enterPassword"
+                            android:paddingLeft="@dimen/dimen_10"
+                            android:paddingRight="@dimen/dimen_10"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/calibri_regular"
+                            android:singleLine="true"
+                            android:maxLength="20"
+                            android:textColorHint="@color/grey"
+                            android:importantForAutofill="noExcludeDescendants"
+                            android:inputType="textPassword"
+                            android:textSize="@dimen/display_text_size"
+                            android:background="@drawable/outer_line_fields_shape"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <TextView
+                        android:id="@+id/forgotPasswordBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple_200"
+                        android:layout_marginLeft="@dimen/dimen_5"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="@dimen/dimen_20"
+                        android:textSize="@dimen/dimen_18"
+                        android:text="@string/forgot_password"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/createPasswordFieldsLayout">
+
+                    <EditText
+                        android:id="@+id/oldPasswordET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/dimen_12"
+                        android:paddingBottom="@dimen/dimen_12"
+                        android:hint="@string/oldPassword"
+                        android:paddingLeft="@dimen/dimen_10"
+                        android:paddingRight="@dimen/dimen_10"
+                        android:textColor="@color/black"
+                        android:singleLine="true"
+                        android:maxLength="30"
+                        android:visibility="gone"
+                        android:layout_marginBottom="@dimen/dimen_30"
+                        android:inputType="textPassword"
+                        android:textColorHint="@color/grey"
+                        android:fontFamily="@font/calibri_regular"
+                        android:textSize="@dimen/display_text_size"
+                        android:background="@drawable/outer_line_fields_shape"/>
+
+                    <EditText
+                        android:id="@+id/createPasswordET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/dimen_12"
+                        android:paddingBottom="@dimen/dimen_12"
+                        android:hint="@string/createPassword"
+                        android:paddingLeft="@dimen/dimen_10"
+                        android:paddingRight="@dimen/dimen_10"
+                        android:textColor="@color/black"
+                        android:singleLine="true"
+                        android:maxLength="30"
+                        android:textColorHint="@color/grey"
+                        android:inputType="textPassword"
+                        android:fontFamily="@font/calibri_regular"
+                        android:textSize="@dimen/display_text_size"
+                        android:background="@drawable/outer_line_fields_shape"/>
+
+                    <EditText
+                        android:id="@+id/confirmPasswordET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/dimen_12"
+                        android:paddingBottom="@dimen/dimen_12"
+                        android:hint="@string/confirmPassword"
+                        android:paddingLeft="@dimen/dimen_10"
+                        android:paddingRight="@dimen/dimen_10"
+                        android:layout_marginTop="@dimen/dimen_30"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/calibri_regular"
+                        android:singleLine="true"
+                        android:maxLength="30"
+                        android:textColorHint="@color/grey"
+                        android:inputType="textPassword"
+                        android:textSize="@dimen/display_text_size"
+                        android:background="@drawable/outer_line_fields_shape"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/loginBtn"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="@dimen/dimen_40"
+                    android:layout_marginLeft="@dimen/dimen_40"
+                    android:layout_marginBottom="@dimen/dimen_20"
+                    android:background="@drawable/round_btn_shape"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/dimen_40"
+                    android:layout_height="@dimen/dimen_50">
+
+                    <TextView
+                        android:id="@+id/submitBtnText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/login"
+                        android:textSize="@dimen/common_btn_text_size"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/calibri_regular"
+                        android:textColor="@color/white"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/newUserLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/light_black_color"
+                        android:textSize="@dimen/dimen_18"
+                        android:text="@string/new_user"/>
+
+                    <TextView
+                        android:id="@+id/registerBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue_color"
+                        android:layout_marginLeft="@dimen/dimen_5"
+                        android:textSize="@dimen/dimen_18"
+                        android:text="@string/register"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

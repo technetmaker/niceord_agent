@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:paddingTop="@dimen/dimen_8"
+        android:paddingBottom="@dimen/dimen_8"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/productTV"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/dimen_18sp"
+            android:textColor="@color/light_black_color"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/dimen_5"
+
+            android:layout_marginStart="@dimen/dimen_10"
+            />
+        <TextView
+            android:id="@+id/quantityTV"
+            android:layout_width="@dimen/dimen_80"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/dimen_18sp"
+            android:textColor="@color/light_black_color"
+            android:layout_gravity="end"
+            android:gravity="end"
+
+            android:layout_marginEnd="@dimen/dimen_5"
+            />
+
+        <TextView
+            android:id="@+id/priceTV"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/dimen_18sp"
+            android:textColor="@color/light_black_color"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            />
+
+    </LinearLayout>
+    <View
+        android:id="@+id/bottomViewLine"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginStart="@dimen/dimen_10"
+        android:layout_marginEnd="@dimen/dimen_10"
+        android:background="@color/grey"/>
+
+</LinearLayout>

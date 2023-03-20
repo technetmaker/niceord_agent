@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".activities.PinViewScreen">
+
+    <LinearLayout
+        android:id="@+id/parentView"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_150"
+            android:layout_gravity="center"
+            android:src="@drawable/app_logo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="@dimen/dimen_20"/>
+
+
+        <LinearLayout
+            android:background="@drawable/top_corner_rounded_white"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_30"
+                android:layout_marginRight="@dimen/dimen_30"
+                android:layout_marginTop="@dimen/dimen_40"
+                android:orientation="vertical">
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enterOtp"
+                    android:textSize="@dimen/dimen_22"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/calibri_regular"
+                    android:textColor="@color/light_black_color"
+                    android:gravity="center"/>
+
+                <LinearLayout
+                    android:id="@+id/otpFieldsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:layout_marginTop="@dimen/dimen_40"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/firstET"
+                        android:layout_width="@dimen/dimen_60"
+                        android:layout_height="@dimen/dimen_50"
+                        android:background="@drawable/outer_line_fields_shape"
+                        android:digits="1234567890"
+                        android:fontFamily="@font/calibri_regular"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_30" />
+
+                    <EditText
+                        android:id="@+id/secondET"
+                        android:layout_width="@dimen/dimen_60"
+                        android:layout_height="@dimen/dimen_50"
+                        android:background="@drawable/outer_line_fields_shape"
+                        android:digits="1234567890"
+                        android:fontFamily="@font/calibri_regular"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:layout_gravity="center"
+                        android:singleLine="true"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:layout_marginRight="@dimen/dimen_5"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_30" />
+
+                    <EditText
+                        android:id="@+id/thirdET"
+                        android:layout_marginRight="@dimen/dimen_10"
+                        android:layout_marginLeft="@dimen/dimen_5"
+                        android:layout_width="@dimen/dimen_60"
+                        android:layout_height="@dimen/dimen_50"
+                        android:background="@drawable/outer_line_fields_shape"
+                        android:digits="1234567890"
+                        android:fontFamily="@font/calibri_regular"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:layout_gravity="center"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_30" />
+
+                    <EditText
+                        android:id="@+id/fourthET"
+                        android:layout_width="@dimen/dimen_60"
+                        android:layout_height="@dimen/dimen_50"
+                        android:background="@drawable/outer_line_fields_shape"
+                        android:digits="1234567890"
+                        android:fontFamily="@font/calibri_regular"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:layout_gravity="center"
+
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_30" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/submitBtn"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="@dimen/dimen_40"
+                    android:layout_marginLeft="@dimen/dimen_40"
+                    android:layout_marginBottom="@dimen/dimen_20"
+                    android:background="@drawable/round_btn_shape"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/dimen_50"
+                    android:layout_height="@dimen/dimen_50">
+
+                    <TextView
+                        android:id="@+id/submitBtnText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/verify"
+                        android:textSize="@dimen/common_btn_text_size"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/calibri_regular"
+                        android:textColor="@color/white"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

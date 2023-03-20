@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "291278054027",
+    "project_id": "niceordagent",
+    "storage_bucket": "niceordagent.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:291278054027:android:a5c603c1ef72120f8c6a8e",
+        "android_client_info": {
+          "package_name": "com.niceord.agent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "291278054027-1kohabtlvnj50j8q663rc4i921r5bo7u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2VTFh2bt5SuAdkadHp_EN-ztJItkTGwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "291278054027-1kohabtlvnj50j8q663rc4i921r5bo7u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:291278054027:android:5791a014f4c780ce8c6a8e",
+        "android_client_info": {
+          "package_name": "com.niceord.consumer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "291278054027-1kohabtlvnj50j8q663rc4i921r5bo7u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2VTFh2bt5SuAdkadHp_EN-ztJItkTGwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "291278054027-1kohabtlvnj50j8q663rc4i921r5bo7u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

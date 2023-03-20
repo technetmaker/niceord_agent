@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/parentView"
+    tools:context=".activities.ProductsScreen">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/toolbar_layout"/>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="@dimen/dimen_42"
+        android:background="@drawable/outer_line_fields_shape"
+        android:paddingBottom="@dimen/dimen_10"
+        android:paddingTop="@dimen/dimen_10"
+        android:paddingStart="@dimen/dimen_20"
+        android:paddingEnd="@dimen/dimen_10"
+        android:layout_marginEnd="@dimen/dimen_5"
+        android:textSize="@dimen/display_text_size"
+        android:visibility="gone"
+        android:imeOptions="actionSearch"
+        app:searchIcon="@null"
+        android:inputType="textFilter"
+        android:queryHint="@string/search_category"
+        app:queryHint="@string/search_product"
+        app:defaultQueryHint="hint"
+        android:iconifiedByDefault="false"
+        app:iconifiedByDefault="false"
+        android:focusableInTouchMode="true"
+        android:focusable="false"
+        app:closeIcon="@null"
+        app:queryBackground="@null"
+        android:theme="@style/ThemeOverlay.SearchView"
+        />
+
+    <TextView
+        android:id="@+id/pleaseTapOnBtnTV"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/display_text_size"
+        android:textColor="@color/grey"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginEnd="@dimen/dimen_20"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:visibility="gone"
+        android:text="@string/pleaseTapOnAddBtn1"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productsRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/dimen_20"/>
+
+
+    </LinearLayout>
+

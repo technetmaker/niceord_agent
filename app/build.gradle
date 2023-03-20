@@ -1,0 +1,111 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+
+android {
+//    signingConfigs {
+//        debug {
+//            storeFile file('E:\\myandroidproject\\NiceOrd-Agent\\keys\\release.jks')
+//            storePassword 'harsh786niceordanmol'
+//            keyAlias 'niceord'
+//            keyPassword 'harsh768niceordanmol'
+//        }
+//    }
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.niceord.agent"
+        minSdk 21
+        targetSdk 32
+        versionCode 8
+        versionName "1.0.4"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.debug
+    }
+
+    signingConfigs {
+//        debug {
+//            storeFile rootProject.file('debug.keystore')
+//            storePassword "android"
+//            keyAlias "androiddebugkey"
+//            keyPassword "android"
+//        }
+        release {
+            storeFile rootProject.file('release.jks')
+            storePassword "harsh786niceordanmol"
+            keyAlias "niceord"
+            keyPassword "harsh786niceordanmol"
+        }
+    }
+
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+//    applicationVariants.all { variant ->
+//        variant.outputs.all {
+//            //add here your logic to customize the name of the apk
+//            def project = "NiceOrd"
+//            def SEP = "_"
+////            def buildType = variant.variantData.variantConfiguration.buildType.name
+//            def buildType = variant.buildType.name
+//            def version = variant.versionName
+//            def date = new Date();
+//            def formattedDate = date.format('dd_MMM_yyyy_HH_mm')
+//            outputFileName = project + SEP + buildType + SEP + version + SEP + formattedDate + ".apk"
+////             = "${variant.name}-${variant.versionName}.apk"
+//        }
+//    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    dataBinding {
+        enabled = true
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.8.0'
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout-core:1.0.4'
+    implementation 'com.google.firebase:firebase-messaging-ktx:23.0.6'
+    implementation 'com.google.android.gms:play-services-nearby:18.2.0'
+    implementation 'androidx.test:core-ktx:1.4.0'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation "androidx.activity:activity-ktx:1.5.0"
+    implementation "com.jakewharton:butterknife:10.2.3"
+    implementation 'androidx.work:work-runtime-ktx:2.7.1'
+    implementation 'com.google.zxing:core:3.5.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.2'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+    implementation platform('com.google.firebase:firebase-bom:30.2.0')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'org.jsoup:jsoup:1.15.4'
+    implementation 'com.github.jrvansuita:CheckNewAppVersionAvailable:v1.0.0'
+
+}
+apply plugin: 'com.google.gms.google-services'

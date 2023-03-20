@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#1c6eb7</color>
+    <color name="purple_500">#1c6eb7</color>
+    <color name="purple_700">#1c6eb7</color>
+    <color name="teal_200">#1c6eb7</color>
+    <color name="teal_700">#1c6eb7</color>
+    <color name="teal_800">#1c6eb7</color>
+    <color name="teal_900">#D7F18C</color>
+    <color name="green">#03AE4A</color>
+    <color name="orange">#FD7006</color>
+    <color name="light_green">#5AEA96</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_white">#D6D3D3</color>
+    <color name="grey">#706E6E</color>
+    <color name="bg_top">#DFD2D2</color>
+    <color name="blue_color1">#55A8F3</color>
+    <color name="blue_color">#1c6eb7</color>
+    <color name="bg_bottom">#BCDAD6</color>
+    <color name="gradient_top_color">#1c6eb7</color>
+    <color name="gradient_bottom_color">#55A8F3</color>
+    <color name="gradient_top_color_red">#D50000</color>
+    <color name="gradient_bottom_color_red">#EA5E5E</color>
+    <color name="light_black_color">#2B2E2E</color>
+    <color name="all_screen_bg_color">#EFE8E8</color>
+    <color name="waiting_screen_bg_color">#002105</color>
+
+
+    //category cardview backgournd colors
+    <color name="bg_light_green">#E2F6EB</color>
+    <color name="bg_light_orange">#F8ECE2</color>
+    <color name="bg_light_red">#F8EAE7</color>
+    <color name="bg_light_purple">#F1E2F4</color>
+    <color name="bg_light_yellow">#F6EED6</color>
+    <color name="bg_light_blue">#DCF1F6</color>
+    <color name="bg_light_spark">#F3F8E2</color>
+
+    <integer-array name="androidcolors">
+        <item>@color/purple_200</item>
+        <item>@color/grey</item>
+        <item>@color/teal_900</item>
+        <item>@color/gradient_bottom_color</item>
+    </integer-array>
+</resources>

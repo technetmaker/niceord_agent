@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/mainLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_10"
+        android:paddingBottom="@dimen/dimen_10"
+        android:paddingRight="@dimen/dimen_10"
+        android:paddingLeft="@dimen/dimen_10"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/labelTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/display_text_size"
+            android:fontFamily="@font/calibri_regular"
+            android:textColor="@color/light_black_color" />
+
+        <View
+            android:id="@+id/viewLineVW"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:background="@color/light_black_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
